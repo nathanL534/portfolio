@@ -9,8 +9,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "#ffffff",
-        foreground: "#0f172a",
+        background: "rgb(var(--background) / <alpha-value>)",
+        foreground: "rgb(var(--foreground) / <alpha-value>)",
+        card: "rgb(var(--card) / <alpha-value>)",
+        "card-foreground": "rgb(var(--card-foreground) / <alpha-value>)",
       },
       keyframes: {
         gradientMove: {

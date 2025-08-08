@@ -59,7 +59,7 @@ export default function Experience() {
                       
                       {/* Highlights */}
                       <div className="space-y-3">
-                        {e.highlights.map((h, i) => (
+                        {e.highlights.map((h) => (
                           <div key={h} className="flex items-start gap-3">
                             <div className="flex-shrink-0 w-1.5 h-1.5 bg-emerald-500 rounded-full mt-2"></div>
                             <p className="text-base leading-relaxed text-slate-600 dark:text-slate-300">{h}</p>

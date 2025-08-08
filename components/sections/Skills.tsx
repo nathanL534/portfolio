@@ -3,7 +3,7 @@ import { BorderBeam } from "@/components/ui/border-beam";
 
 export default function Skills() {
   return (
-    <section id="skills" className="container mx-auto px-4 md:px-8 py-16 md:py-24">
+    <section id="skills" className="container mx-auto px-4 md:px-8 py-16 md:py-24 bg-white dark:bg-zinc-900">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">

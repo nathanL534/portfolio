@@ -6,10 +6,10 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="container mx-auto px-4 md:px-8 py-16 md:py-24">
+    <section className="container mx-auto px-4 md:px-8 py-16 md:py-24 bg-gradient-to-b from-white via-violet-50/30 to-sky-50/30 dark:from-zinc-900 dark:via-zinc-900/60 dark:to-zinc-900">
       <div className="max-w-5xl mx-auto text-center">
         {/* Glass Card Container */}
-        <div className="backdrop-blur-xl bg-white/60 dark:bg-white/5 border border-black/5 dark:border-white/10 rounded-3xl shadow-2xl p-8 md:p-16">
+        <div className="backdrop-blur-xl bg-white/90 dark:bg-white/5 border border-black/5 dark:border-white/10 rounded-3xl shadow-2xl p-8 md:p-16">
           <BorderBeam size={600} duration={15} delay={0} />
           
           {/* Badge */}

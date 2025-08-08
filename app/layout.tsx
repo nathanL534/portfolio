@@ -41,7 +41,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.variable} font-sans antialiased bg-gradient-to-b from-white via-violet-50 to-sky-50 dark:from-zinc-900 dark:via-zinc-900/60 dark:to-zinc-900 min-h-screen`}>
+      <body className={`${inter.variable} font-sans antialiased bg-white dark:bg-zinc-900 min-h-screen`}>
         <ThemeProvider>
           <ScrollProgress />
           <SiteHeader />

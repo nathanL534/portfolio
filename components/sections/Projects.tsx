@@ -5,7 +5,7 @@ import { BorderBeam } from "@/components/ui/border-beam";
 
 export default function Projects() {
   return (
-    <section id="projects" className="container mx-auto px-4 md:px-8 py-16 md:py-24">
+    <section id="projects" className="container mx-auto px-4 md:px-8 py-16 md:py-24 bg-gradient-to-b from-gray-50/30 to-white dark:from-zinc-800 dark:to-zinc-900">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">

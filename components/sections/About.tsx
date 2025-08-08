@@ -3,7 +3,7 @@ import { BorderBeam } from "@/components/ui/border-beam";
 
 export default function About() {
   return (
-    <section id="about" className="container mx-auto px-4 md:px-8 py-16 md:py-24">
+    <section id="about" className="container mx-auto px-4 md:px-8 py-16 md:py-24 bg-gradient-to-b from-white to-gray-50/30 dark:from-zinc-900 dark:to-zinc-800">
       <div className="max-w-4xl mx-auto text-center">
         {/* Section Header */}
         <div className="mb-12">
@@ -18,7 +18,7 @@ export default function About() {
         </div>
 
         {/* Main Card */}
-        <div className="relative backdrop-blur-xl bg-white/60 dark:bg-white/5 border border-black/5 dark:border-white/10 rounded-3xl shadow-2xl p-8 md:p-12 transition hover:shadow-3xl">
+        <div className="relative backdrop-blur-xl bg-white/90 dark:bg-white/5 border border-black/5 dark:border-white/10 rounded-3xl shadow-2xl p-8 md:p-12 transition hover:shadow-3xl">
           <BorderBeam size={500} duration={15} delay={0} />
           
           <div className="space-y-8">
@@ -55,15 +55,15 @@ export default function About() {
 
             {/* Stats Cards */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
-              <div className="rounded-2xl bg-white/70 dark:bg-white/5 border border-black/5 dark:border-white/10 shadow-md p-6">
+              <div className="rounded-2xl bg-white dark:bg-white/5 border border-black/5 dark:border-white/10 shadow-md p-6">
                 <div className="text-3xl font-bold bg-gradient-to-r from-violet-500 to-sky-500 bg-clip-text text-transparent mb-2">5+</div>
                 <div className="text-sm font-medium text-zinc-700 dark:text-zinc-300">Years Experience</div>
               </div>
-              <div className="rounded-2xl bg-white/70 dark:bg-white/5 border border-black/5 dark:border-white/10 shadow-md p-6">
+              <div className="rounded-2xl bg-white dark:bg-white/5 border border-black/5 dark:border-white/10 shadow-md p-6">
                 <div className="text-3xl font-bold bg-gradient-to-r from-emerald-500 to-teal-500 bg-clip-text text-transparent mb-2">24+</div>
                 <div className="text-sm font-medium text-zinc-700 dark:text-zinc-300">Projects Built</div>
               </div>
-              <div className="rounded-2xl bg-white/70 dark:bg-white/5 border border-black/5 dark:border-white/10 shadow-md p-6">
+              <div className="rounded-2xl bg-white dark:bg-white/5 border border-black/5 dark:border-white/10 shadow-md p-6">
                 <div className="text-3xl font-bold bg-gradient-to-r from-violet-500 to-sky-500 bg-clip-text text-transparent mb-2">8+</div>
                 <div className="text-sm font-medium text-zinc-700 dark:text-zinc-300">Open Source</div>
               </div>

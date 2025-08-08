@@ -2,6 +2,7 @@ import { NumberTicker } from "@/components/ui/number-ticker";
 
 export default function Stats() {
   return (
+  
     <section className="py-16 md:py-24">
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid grid-cols-3 gap-8 text-center">

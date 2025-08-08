@@ -1,7 +1,9 @@
 import { skills } from "@/data/skills";
+import { Reveal } from "./magicui/reveal";
 
 export default function SkillsGrid() {
   return (
+    <Reveal>
     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
       {skills.map(({ name, Icon }) => (
         <div 
@@ -13,5 +15,6 @@ export default function SkillsGrid() {
         </div>
       ))}
     </div>
+    </Reveal>
   );
 }

@@ -1,8 +1,12 @@
 import { TypingAnimation } from "@/components/ui/typing-animation";
 import { BorderBeam } from "@/components/ui/border-beam";
+import { NumberTicker } from "../ui/number-ticker";
+import { NeonGradientCard } from "../magicui/neon-gradient-card";
+import { Reveal } from "../magicui/reveal";
 
 export default function About() {
   return (
+    <Reveal>
     <section id="about" className="container mx-auto px-4 md:px-8 py-16 md:py-24 bg-gradient-to-b from-white to-gray-50/30 dark:from-zinc-900 dark:to-zinc-800">
       <div className="max-w-4xl mx-auto text-center">
         {/* Section Header */}
@@ -17,9 +21,11 @@ export default function About() {
           </p>
         </div>
 
+
+        <NeonGradientCard>
         {/* Main Card */}
         <div className="relative backdrop-blur-xl bg-white/90 dark:bg-white/5 border border-black/5 dark:border-white/10 rounded-3xl shadow-2xl p-8 md:p-12 transition hover:shadow-3xl">
-          <BorderBeam size={500} duration={15} delay={0} />
+          <BorderBeam size={600} duration={15} delay={0} />
           
           <div className="space-y-8">
             {/* Greeting */}
@@ -70,8 +76,10 @@ export default function About() {
             </div>
           </div>
         </div>
+        </NeonGradientCard>
       </div>
     </section>
+    </Reveal>
   );
 }
 

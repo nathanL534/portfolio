@@ -1,8 +1,10 @@
 import SkillsGrid from "@/components/SkillsGrid";
 import { BorderBeam } from "@/components/ui/border-beam";
+import { Reveal } from "../magicui/reveal";
 
 export default function Skills() {
   return (
+    <Reveal>
     <section id="skills" className="container mx-auto px-4 md:px-8 py-16 md:py-24 bg-white dark:bg-zinc-900">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
@@ -36,7 +38,7 @@ export default function Skills() {
                 Constantly exploring new technologies and staying up-to-date with the latest trends in web development. 
                 Here are some of the tools I&apos;m currently excited about:
               </p>
-              
+              <Reveal>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
                 <div className="inline-flex items-center gap-2 rounded-2xl px-4 py-3 bg-white/70 dark:bg-white/5 border border-black/5 dark:border-white/10 shadow-md font-medium">
                   <div className="w-2 h-2 bg-emerald-500 rounded-full"></div>
@@ -50,12 +52,15 @@ export default function Skills() {
                   <div className="w-2 h-2 bg-sky-500 rounded-full"></div>
                   Framer Motion
                 </div>
+
               </div>
+              </Reveal>
             </div>
           </div>
         </div>
       </div>
     </section>
+    </Reveal>
   );
 }
 

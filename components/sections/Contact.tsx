@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { BorderBeam } from "@/components/ui/border-beam";
+import { Reveal } from "../magicui/reveal";
 
 const schema = z.object({
   name: z.string().min(2, "Please enter your name"),
@@ -24,6 +25,7 @@ export default function Contact() {
   }
 
   return (
+    <Reveal>
     <section id="contact" className="container mx-auto px-4 md:px-8 py-16 md:py-24">
       <div className="max-w-4xl mx-auto">
         {/* Section Header */}
@@ -112,7 +114,7 @@ export default function Contact() {
               <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Get In Touch</h3>
               <div className="space-y-6">
                 <a 
-                  href="mailto:nathan@example.com" 
+                  href="mailto:njlee007@gmail.com" 
                   className="group flex items-center gap-4 p-4 rounded-xl bg-gradient-to-br from-sky-50 to-sky-100 dark:from-sky-900/20 dark:to-sky-800/20 hover:from-sky-100 hover:to-sky-200 dark:hover:from-sky-800/30 dark:hover:to-sky-700/30 transition-all"
                 >
                   <div className="w-12 h-12 bg-sky-500 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
@@ -122,12 +124,12 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="font-semibold text-slate-900 dark:text-white">Email</div>
-                    <div className="text-sm text-slate-600 dark:text-slate-400">nathan@example.com</div>
+                    <div className="text-sm text-slate-600 dark:text-slate-400">njlee007@gmail.com</div>
                   </div>
                 </a>
                 
                 <a 
-                  href="https://linkedin.com/in/nathanlee" 
+                  href="https://www.linkedin.com/in/nathaniel-lee-443244327" 
                   className="group flex items-center gap-4 p-4 rounded-xl bg-gradient-to-br from-violet-50 to-violet-100 dark:from-violet-900/20 dark:to-violet-800/20 hover:from-violet-100 hover:to-violet-200 dark:hover:from-violet-800/30 dark:hover:to-violet-700/30 transition-all" 
                   target="_blank"
                 >
@@ -143,7 +145,7 @@ export default function Contact() {
                 </a>
                 
                 <a 
-                  href="https://github.com/nathanlee" 
+                  href="https://github.com/nathanL534" 
                   className="group flex items-center gap-4 p-4 rounded-xl bg-gradient-to-br from-emerald-50 to-emerald-100 dark:from-emerald-900/20 dark:to-emerald-800/20 hover:from-emerald-100 hover:to-emerald-200 dark:hover:from-emerald-800/30 dark:hover:to-emerald-700/30 transition-all" 
                   target="_blank"
                 >
@@ -179,6 +181,7 @@ export default function Contact() {
         </div>
       </div>
     </section>
+    </Reveal>
   );
 }
 

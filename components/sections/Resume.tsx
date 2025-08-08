@@ -1,7 +1,9 @@
 import { BorderBeam } from "@/components/ui/border-beam";
+import { Reveal } from "../magicui/reveal";
 
 export default function Resume() {
   return (
+    <Reveal>
     <section id="resume" className="container mx-auto px-4 md:px-8 py-16 md:py-24">
       <div className="max-w-4xl mx-auto text-center">
         {/* Section Header */}
@@ -73,6 +75,7 @@ export default function Resume() {
         </div>
       </div>
     </section>
+    </Reveal>
   );
 }
 

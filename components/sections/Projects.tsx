@@ -1,10 +1,14 @@
 // import Image from "next/image"; // Temporarily removed
+"use client"
+
 import { projects } from "@/data/projects";
 import Link from "next/link";
 import { BorderBeam } from "@/components/ui/border-beam";
+import { Reveal } from "../magicui/reveal";
 
 export default function Projects() {
   return (
+    <Reveal>
     <section id="projects" className="container mx-auto px-4 md:px-8 py-16 md:py-24 bg-gradient-to-b from-gray-50/30 to-white dark:from-zinc-800 dark:to-zinc-900">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
@@ -89,6 +93,7 @@ export default function Projects() {
         </div>
       </div>
     </section>
+    </Reveal>
   );
 }
 
